@@ -33,5 +33,5 @@ CREATE TABLE `reserva` (
   PRIMARY KEY (`id`)
 )
 
-esta tabla debe de crearse dentro de una base de datos llamada db_springboot_cloud, para su correcto funcionamiento  
+esta tabla debe crearse dentro de una base de datos llamada db_springboot_cloud, para su correcto funcionamiento  
 De igual forma si desea cambiar el nombre de la base de datos puede hacer en el archivo application.yml en la propidad database. 
