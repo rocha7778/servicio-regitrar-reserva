@@ -43,7 +43,6 @@ public class ReservaController {
 			try {
 				fechaIngreso = ManageMentDate.getDateFromString(dto.getFechaIngreso());
 			} catch (BadRequestException e) {
-				// TODO Auto-generated catch block
 				throw new BadRequestException("Error en el formato Fecha de Ingreso "+dto.getFechaIngreso());
 			}
 		}
@@ -52,7 +51,6 @@ public class ReservaController {
 			try {
 				fechaSalida = ManageMentDate.getDateFromString(dto.getFechaSalida());
 			} catch (BadRequestException e) {
-				// TODO Auto-generated catch block
 				throw new BadRequestException("Error en el formato Fecha de Salida "+dto.getFechaSalida());
 			}
 		}
