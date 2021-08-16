@@ -18,20 +18,4 @@ Una vez registrada la reserva ese ofrece un punto de acceso para consultar la re
 # Proyecto libreria commons  
 Este poryecto se debe compilar y generar el jar con el comando mvnw.cmd install para window, y para linux mvnw install
 
-## MySQl
-La tabla base para  registrar los datos es la tabla reserva, la cual presenta la siguiente estructura :  
-```sh
-CREATE TABLE `reserva` (
-  `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `fecha_ingreso` date DEFAULT NULL,
-  `fecha_salida` date DEFAULT NULL,
-  `no_personas` tinyint DEFAULT NULL,
-  `titular_reserva` varchar(50) DEFAULT NULL,
-  `no_habitaciones` tinyint DEFAULT NULL,
-  `no_menores` tinyint DEFAULT NULL,
-  `email` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-)
-
-esta tabla debe crearse dentro de una base de datos llamada db_springboot_cloud, para su correcto funcionamiento  
-De igual forma si desea cambiar el nombre de la base de datos puede hacer en el archivo application.yml en la propidad database. 
+ 
